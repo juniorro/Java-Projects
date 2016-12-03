@@ -5,6 +5,7 @@ public class CalculatorController {
 	private CalculatorView View;
 	private CalculatorModel Model;
 	
+	//constructor
 	public CalculatorController(CalculatorView View, CalculatorModel Model){
 		
 		this.View = View;
@@ -13,6 +14,7 @@ public class CalculatorController {
 		this.View.ShowResultListener(new CalculateListener());
 	}
 	
+	//action listener
 	class CalculateListener implements ActionListener {
 
 		@Override
