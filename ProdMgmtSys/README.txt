@@ -42,7 +42,7 @@ MySql Server
 TROUBLESHOOTING
 ---------------
 
-Tomcat might not find classes 
+Tomcat might not find the classes if 
 the paths were not configured correctly.v
 Include all classes in one folder, and remove 
 the packages in each class.
