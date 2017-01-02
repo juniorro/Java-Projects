@@ -43,6 +43,6 @@ TROUBLESHOOTING
 ---------------
 
 Tomcat might not find the classes if 
-the paths were not configured correctly.v
+the paths were not configured correctly.
 Include all classes in one folder, and remove 
 the packages in each class.
