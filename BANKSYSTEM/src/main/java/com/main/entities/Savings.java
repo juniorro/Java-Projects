@@ -4,9 +4,9 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("SA")
+@DiscriminatorValue("Savings Account")
 public class Savings extends Account {
-	
+
 	private double interest;
 
 	public Savings() {
@@ -26,8 +26,8 @@ public class Savings extends Account {
 	public void setInterest(double interest) {
 		this.interest = interest;
 	}
-	
-	
-	
+
+
+
 
 }

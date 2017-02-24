@@ -5,9 +5,9 @@ import javax.persistence.Entity;
 
 
 @Entity
-@DiscriminatorValue("CA")
+@DiscriminatorValue("Checking Account")
 public class Checking extends Account {
-	
+
 	private double discover;
 
 	public Checking() {
@@ -27,7 +27,7 @@ public class Checking extends Account {
 	public void setDiscover(double discover) {
 		this.discover = discover;
 	}
-	
-	
+
+
 
 }

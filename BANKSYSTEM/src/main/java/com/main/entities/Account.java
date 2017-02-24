@@ -14,23 +14,23 @@ import javax.persistence.OneToMany;
 
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="ACNT_TYPE", discriminatorType=DiscriminatorType.STRING, length=2)
+@DiscriminatorColumn(name="ACNT_TYPE", discriminatorType=DiscriminatorType.STRING, length=16)
 public abstract class Account implements Serializable {
-	
+
 	@Id
 	private String AccountCode;
 	private Date creationDate;
 	private double balance;
-	
+
 	@ManyToOne
 	@JoinColumn(name="CLIENT_CODE")
 	private Client client;
-	
+
 	@OneToMany(mappedBy="account")
 	private Collection<Transaction> transanctions;
-	
-	
-	
+
+
+
 	public Account() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -104,8 +104,7 @@ public abstract class Account implements Serializable {
 
 	public void setTransanctions(Collection<Transaction> transanctions) {
 		this.transanctions = transanctions;
-	}	
-	
+	}
+
 
 }
-

@@ -13,15 +13,17 @@
         <div class="col-md-offset-5 col-md-3">
             <div class="form-login">
             <h4>Welcome back.</h4>
-            <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+            <form th:action="@{/login}" method="POST">
+            <input type="text" id="userName" class="form-control input-sm chat-input" name="username" placeholder="username" />
             <br></br>
-            <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+            <input type="text" id="userPassword" class="form-control input-sm chat-input" name="password" placeholder="password" />
             <br></br>
             <div class="wrapper">
             <span class="group-btn">     
-                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
+             <input type="submit" class="btn btn-primary btn-md"/>login <i class="fa fa-sign-in"></i>
             </span>
-            </div>
+            </div>            
+            </form>
             </div>
         
         </div>
