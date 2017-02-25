@@ -37,9 +37,9 @@ public class ControllerServlet extends HttpServlet {
     	
     	//Set Properties for mail server 
     	
-    	String emailFrom = "rolandjuniortoussaint@gmail.com";
-    	String username = "rolandjuniortoussaint";
-    	String password = "N99google1";
+    	String emailFrom = "youremail@gmail.com";
+    	String username = "yourusername";
+    	String password = "yourpassword";
     	
     	emailSender.SendEmail(emailTo, emailFrom, emailSubject, emailMessage, username, password);
     	
