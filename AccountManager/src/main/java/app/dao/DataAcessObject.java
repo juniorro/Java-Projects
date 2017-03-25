@@ -1,9 +1,10 @@
-package com.main.interfaces;
+package app.dao;
 import org.springframework.data.domain.Page;
-import com.main.entities.Account;
-import com.main.entities.Transaction;
 
-public interface BankInterface {
+import app.model.Account;
+import app.model.Transaction;
+
+public interface DataAcessObject {
 	
 	public Account checkAccount(String accountcode);
 	public void makeDeposit(String accountcode, double theAmount);

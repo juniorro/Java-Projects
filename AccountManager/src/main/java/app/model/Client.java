@@ -1,4 +1,4 @@
-package com.main.entities;
+package app.model;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Entity;

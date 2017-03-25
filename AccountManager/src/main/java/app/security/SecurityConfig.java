@@ -1,4 +1,4 @@
-package com.main.securityconf;
+package app.security;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,9 +22,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure (HttpSecurity http)throws Exception {
 		
-		http.formLogin().loginPage("/login");
-		http.authorizeRequests().antMatchers("/home", "/accounts", "/transactions").hasRole("ADMIN");
-		http.authorizeRequests().antMatchers("/home", "/accounts").hasRole("USER");
+		//http.formLogin().loginPage("/login");
+//		http.authorizeRequests().antMatchers("/home", "/accounts", "/transactions").hasRole("ADMIN");
+//		http.authorizeRequests().antMatchers("/home", "/accounts").hasRole("USER");
 		
 	}
 

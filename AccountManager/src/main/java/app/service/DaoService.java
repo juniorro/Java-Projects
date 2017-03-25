@@ -1,19 +1,23 @@
-package com.main.interfaces;
+package app.service;
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.main.entities.*;
-import com.main.repositories.*;
+
+import app.dao.*;
+import app.model.*;
+import app.repository.*;
+import app.service.*;
 
 @Service
 @Transactional
-public class InterfaceImplementation implements BankInterface {
+public class DaoService implements DataAcessObject {
 
 	@Autowired
 	private AccountRepository AccountRepository;
+	
 	@Autowired
 	private TransactionRepository transactionRepository;
 	
@@ -70,3 +74,4 @@ public class InterfaceImplementation implements BankInterface {
 	}
 
 }
+

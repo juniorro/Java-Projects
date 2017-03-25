@@ -1,4 +1,4 @@
-package com.main.securityconf;
+package app.security;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,11 +7,12 @@ public class LoginController {
 		
 		@RequestMapping(value="/login")
 		public String login(){			
+			//return "login";
 			return "login";
 		}
 		
-		@RequestMapping(value="/")
+		@RequestMapping(value="/home")
 		public String home(){			
-			return "redirect:/home";
+			return "homepage";
 		}
 }

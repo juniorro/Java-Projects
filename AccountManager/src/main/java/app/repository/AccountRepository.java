@@ -1,7 +1,10 @@
-package com.main.repositories;
+package app.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.main.entities.Account;
+import org.springframework.stereotype.Repository;
 
+import app.model.*;
+
+@Repository
 public interface AccountRepository extends JpaRepository<Account, String> {
 
 }

@@ -1,4 +1,4 @@
-package com.main.entities;
+package app.model;
 import java.util.Date;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
