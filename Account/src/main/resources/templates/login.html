@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"/>
+	<title>Florida General Bank</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css" th:href="@{/bootstrap/css/style.css}" media="screen"/>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+            <div class="form-login">
+            <h4>Welcome back.</h4>
+            <form th:action="@{/login}" method="POST">
+            <input type="text" id="userName" class="form-control input-sm chat-input" name="username" placeholder="username" />
+            <br></br>
+            <input type="text" id="userPassword" class="form-control input-sm chat-input" name="password" placeholder="password" />
+            <br></br>
+            <div class="wrapper">
+            <span class="group-btn">     
+             <input type="submit" class="btn btn-primary btn-md"/>login <i class="fa fa-sign-in"></i>
+            </span>
+            </div>            
+            </form>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>
