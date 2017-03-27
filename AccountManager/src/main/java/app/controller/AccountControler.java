@@ -14,12 +14,26 @@ public class AccountControler {
 
 	@Autowired
 	private DaoService daoService;
+<<<<<<< HEAD
 	
 	@RequestMapping(value="/home")
 	public String home(){
 		return "homepage";
 	}
 	
+=======
+
+	@RequestMapping(value="/login")
+	public String login(){			
+		return "login";
+	}
+	
+	@RequestMapping("/home")
+	public String index(){
+		return "homepage";
+	}
+
+>>>>>>> d43d73efc357ec64f1b5dedd186b7071d3e9079d
 	@RequestMapping("/accounts")
 	public String Account(Model model, String accountcode, @RequestParam(name="page", defaultValue="0") int page, @RequestParam(name="size", defaultValue="10") int size){
 		model.addAttribute("accountcode", accountcode);

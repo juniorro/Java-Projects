@@ -25,6 +25,7 @@
     </form><br/>
 
     <div class="panel panel-primary" th:if="${account}">
+<<<<<<< HEAD
 <div class="panel-heading">
 <h3 class="panel-title">Account Information</h3>
 </div>
@@ -70,10 +71,58 @@
  </table>
 </div>
 </div>
+=======
+		<div class="panel-heading">
+		<h3 class="panel-title">Account Information</h3>
+		</div>
+		<div class="panel-body">
+
+		<table class="table table-hover">
+	    <tbody>
+	    <tr>
+	        <td>Name</td>
+	        <td th:text="${account.client.name}"></td>
+	      </tr>
+
+	     <tr th:if="${account.class.simpleName=='Checking'}">
+	        <td>Available Balance</td>
+	        <td th:text="${account.discover}"></td>
+	      </tr>
+
+	      <tr>
+	        <td>Account Balance</td>
+	        <td th:text="${account.balance}"></td>
+	      </tr>
+
+	      <tr>
+	        <td>Account Code</td>
+	        <td th:text="${account.AccountCode}"></td>
+	      </tr>
+
+	       <tr>
+	        <td>Account Type</td>
+	        <td th:text="${account.class.simpleName}"></td>
+	      </tr>
+
+	      <tr th:if="${account.class.simpleName=='Savings'}">
+	        <td>Interest Rate</td>
+	        <td th:text="${account.interest}"></td>
+	      </tr>
+
+	       <tr>
+	        <td>Creation Date</td>
+	        <td th:text="${#dates.format(account.creationDate, 'dd-MMM-yyyy')}"></td>
+	      </tr>
+	      </tbody>
+	  </table>
+		</div>
+		</div>
+>>>>>>> d43d73efc357ec64f1b5dedd186b7071d3e9079d
 
 
 
 
+<<<<<<< HEAD
 <div class="panel panel-primary">
  <div class="panel-heading">
    <h3 class="panel-title">Transactions</h3>
@@ -96,6 +145,30 @@
  </div><br/>
  <div id="trans" style="display:none">
  <label for="inputEmail" class="col-lg-2 control-label">To</label>
+=======
+		<div class="panel panel-primary">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Transactions</h3>
+	  </div>
+	  <div class="panel-body">
+	  <form th:action="@{/transactions}" method="post">
+	  <div>
+	  <span>Account Code:</span>
+	  <input type="hidden" name="accountcode" th:value="${accountcode}"/>
+	  <span th:text="${accountcode}"></span>
+	  <div>
+	  <input type="radio" name="operationType" checked="checked" value="deposit" onchange="document.getElementById('trans').style.display='none'"/>
+	  <span>Deposit</span>
+
+	  <input type="radio" name="operationType" value="withdraw" onchange="document.getElementById('trans').style.display='none'"/>
+	  <span>Withdraw</span>
+
+	  <input type="radio" name="operationType" value="transfer" onchange="document.getElementById('trans').style.display='block'"/>
+	  <span>Transfer</span>
+	  </div><br/>
+	  <div id="trans" style="display:none">
+	  <label for="inputEmail" class="col-lg-2 control-label">To</label>
+>>>>>>> d43d73efc357ec64f1b5dedd186b7071d3e9079d
       <div class="col-lg-10">
         <input type="text" name="accountcode2" class="form-control" id="inputEmail" placeholder="Account Code"/>
         </div>
