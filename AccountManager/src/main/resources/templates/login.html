@@ -16,7 +16,7 @@
 			  	<div class="panel-heading">
 			    	<h3 class="panel-title">Please Sign In</h3>
 			    	<div th:if="${param.error}" class="danger">Incorrect Username or Password</div>
-			    	<div th:if="${param.logout}" class="danger">You've been logged out.</div>
+			    	<div th:if="${param.logout}" class="nondanger">You've been logged out.</div>
 			 	</div>
 			  	<div class="panel-body">
 			    	<form th:action="@{/login}" method="post">
