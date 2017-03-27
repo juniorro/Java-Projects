@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 
 
 @Entity
-@DiscriminatorValue("Checking Account")
+@DiscriminatorValue("CA")
 public class Checking extends Account {
 
 	private double discover;

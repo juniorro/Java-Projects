@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="ACNT_TYPE", discriminatorType=DiscriminatorType.STRING, length=16)
+@DiscriminatorColumn(name="ACNT_TYPE", discriminatorType=DiscriminatorType.STRING, length=2)
 public abstract class Account implements Serializable {
 
 	@Id

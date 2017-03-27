@@ -14,16 +14,16 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-           <a class="navbar-brand" href="#">Berea General Bank</a>
+           <a class="navbar-brand" th:href="@{/home}">Berea General Bank</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Checking</a></li>
-              <li><a href="#">Savings</a></li>
-              <li><a href="#">Transfer</a></li>
+              <li><a th:href="@{/accounts?accountcode=SA}">Checking</a></li>
+              <li><a th:href="@{/accounts?accountcode=CA}">Savings</a></li>
+              <li><a th:href="@{/home}">Transfer</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="../navbar-fixed-top/">Sign Out</a></li>
+              <li><a th:href="@{/login?logout}">Sign Out</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
