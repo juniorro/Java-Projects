@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/home/juniorro/Documents/Github/product-manager/src/jdk-8u121-linux-i586-demos.tar.gz"/>
+	<classpathentry kind="lib" path="src/jdk-8u121-linux-i586-demos.tar.gz"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
