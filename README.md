@@ -1,5 +1,5 @@
-# product-manager
-General Product Management; add, remove, edit, save.
+# Product Manager App
+General Product Management Application to add, remove, edit, and save products.
 
 /**
 * Author:  Roland Junior Toussaint
@@ -43,9 +43,9 @@ MySql Server </br>
 # TROUBLESHOOTING
 
 Tomcat might not find the classes if
-the paths were not configured correctly.
+the paths are not configured correctly.
 Include all classes in one folder, and remove
-the packages in each class.
+the package import in each class.
 
 # VISUAL
 
